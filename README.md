@@ -1,9 +1,10 @@
 ### Hi there 👋
 
-[![jmquintana's GitHub stats](https://github-readme-stats.vercel.app/api?username=jmquintana)](https://github.com/anuraghazra/github-readme-stats)
 
 <!--
 **jmquintana/jmquintana** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+[![jmquintana's GitHub stats](https://github-readme-stats.vercel.app/api?username=jmquintana)](https://github.com/anuraghazra/github-readme-stats)
 
 Here are some ideas to get you started:
 
