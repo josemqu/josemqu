@@ -17,7 +17,7 @@
 <p align="left">
 <a href="https://twitter.com/josemqu1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="josemqu1" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/https://www.linkedin.com/in/jos%c3%a9-mar%c3%ada-quintana-45a4997/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/jos%c3%a9-mar%c3%ada-quintana-45a4997/" height="30" width="40" /></a>
-<a href="https://fb.com/jmquintana" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="jmquintana" height="30" width="40" /></a>
+<a href="https://fb.com/jmquintana" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="elmaildejose" height="30" width="40" /></a>
 <a href="https://instagram.com/josemqu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="josemqu" height="30" width="40" /></a>
 </p>
 
