@@ -7,7 +7,7 @@
 
 - 🤝 I’m looking for help with **Firebase, Bootstrap**
 
-- 👨‍💻 All of my projects are available at [https://github.com/jmquintana](https://github.com/jmquintana)
+- 👨‍💻 All of my projects are available at [here](https://github.com/jmquintana)
 
 - 💬 Ask me about **Javascript, Python, Data Science, Jupyter Notebook**
 
