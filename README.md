@@ -7,7 +7,7 @@
 
 - 🤝 I’m looking to collaborate on **Full-Stack Development, Firebase, UI/UX Design**
 
-- 👨‍💻 All of my projects are available at [here](https://github.com/jmquintana)
+- 👨‍💻 All of my projects are available at [here](https://jmquintana.vercel.app/)
 
 - 💬 Ask me about **Frontend Development, JavaScript, Python, Data Science, Jupyter Notebook, Web Performance**
 
