@@ -1,5 +1,5 @@
 <h1 align="center">👋 ¡Hola! Soy José María Quintana</h1>
-<h3 align="center">Ingeniero en Energía & Desarrollador Full‑Stack desde Mar del Plata, Argentina</h3>
+<h3 align="center">Ingeniero Químico & Desarrollador Full‑Stack</h3>
 
 <p align="center">
   <a href="https://twitter.com/josemqu1" target="_blank">
