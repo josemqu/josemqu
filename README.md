@@ -59,8 +59,8 @@ He actualizado los dashboards de métricas para mejorar la experiencia y funcion
 ## 🤝 ¿Querés colaborar?
 
 - Te faltan datos o querés agregar otra provincia/combustible: ¡podemos agregar endpoints / scrapers o extender frontend!
-- Interesado en implementar seguimiento histórico, alertas automatizadas por precio o integración con Voz/Asistentes: trabajemos sobre PriceNafta.
-- Python/ML aplicado: podríamos añadir pronósticos de precios con modelos ligeros.
+- Interesado en implementar seguimiento histórico, alertas automatizadas por precio o lista de favoritos: trabajemos sobre Precio Nafta.
+- Probá la versión actual de [Precio Nafta](https://www.precionafta.com)
 
 ---
 
