@@ -71,7 +71,7 @@ He actualizado los dashboards de métricas para mejorar la experiencia y funcion
 
 ---
 
-<p align="center">
+<p align="left">
   <!-- Lenguajes más usados -->
   <img 
     src="https://github-readme-stats.vercel.app/api/top-langs?username=josemqu&layout=compact&theme=transparent&hide_border=true" 
