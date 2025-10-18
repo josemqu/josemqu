@@ -92,44 +92,6 @@
 
 ---
 
-## 🧩 Otros proyectos destacados
-
-<table>
-  <thead>
-    <tr>
-      <td><b>🛠️ Proyecto</b></td>
-      <td><b>📬 Descripción</b></td>
-      <td><b>💻 Tecnologías</b></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://github.com/josemqu/PrecioNafta"><b>Precio Nafta</b></a></td>
-      <td>App y web para visualizar precios actualizados de combustibles en Argentina, con integración a Google Maps y dashboards de análisis de precios.</td>
-      <td>React · Node.js · Firebase · Chart.js</td>
-    </tr>
-    <tr>
-      <td><a href="#"><b>WellExpert Dashboard</b></a></td>
-      <td>Aplicación interna para monitoreo de canales WITSML y análisis de operaciones de workover y perforación en tiempo real.</td>
-      <td>React · WITSML · REST API · SQL Server</td>
-    </tr>
-    <tr>
-      <td><a href="#"><b>Password Manager Ops</b></a></td>
-      <td>App en Power Apps para almacenar credenciales compartidas entre operadores de sala de control, con permisos por roles y cumplimiento OWASP Top 10.</td>
-      <td>Power Apps · Dataverse · Security by Design</td>
-    </tr>
-  </tbody>
-</table>
-
----
-
-## 📫 Contacto
-
-- ✉️ **mailjmq@gmail.com**  
-- 🐦 [Twitter](https://twitter.com/josemqu1) • 💼 [LinkedIn](https://linkedin.com/in/josemqu) • 🧑‍💻 [GitHub](https://github.com/josemqu)
-
----
-
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=josemqu&show_icons=true&theme=transparent&hide_border=true" alt="Estadísticas de GitHub"/><br/>
   <img src="https://streak-stats.demolab.com?user=josemqu&theme=transparent&hide_border=true" alt="Racha de commits"/><br/>
