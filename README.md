@@ -72,20 +72,6 @@ He actualizado los dashboards de métricas para mejorar la experiencia y funcion
 ---
 
 <p align="center">
-  <img 
-    src="https://github-readme-stats.vercel.app/api/top-langs?username=josemqu&layout=compact&theme=transparent&hide_border=true" 
-    alt="Lenguajes más usados" 
-  />
-  <br/>
-  <a href="https://github.com/jmquintana">
-    <img 
-      src="https://github-readme-stats.vercel.app/api?username=josemqu&show_icons=true&theme=transparent&hide_border=true" 
-      alt="Estadísticas de GitHub" 
-    />
-  </a>
-</p>
-
-<p align="center">
   <!-- Lenguajes más usados -->
   <img 
     src="https://github-readme-stats.vercel.app/api/top-langs?username=josemqu&layout=compact&theme=transparent&hide_border=true" 
@@ -106,13 +92,6 @@ He actualizado los dashboards de métricas para mejorar la experiencia y funcion
   <img 
     src="https://streak-stats.demolab.com?user=josemqu&theme=transparent&hide_border=true" 
     alt="Racha de commits" 
-  />
-  <br/>
-
-  <!-- Trophy (logros) -->
-  <img 
-    src="https://github-profile-trophy.vercel.app/?username=josemqu&theme=onestar&no-frame=true&column=4" 
-    alt="Trofeos de GitHub" 
   />
   <br/>
 
