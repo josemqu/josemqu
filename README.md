@@ -9,6 +9,7 @@
   <a href="https://twitter.com/josemqu1"><img src="https://img.shields.io/twitter/follow/josemqu1?logo=twitter&style=for-the-badge" alt="@josemqu1" /></a>
   <a href="https://linkedin.com/in/josemqu"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://github.com/josemqu"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="https://jmquintana.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-28A745?style=for-the-badge&logo=react&logoColor=white"/></a>
 </p>
 
 ---
