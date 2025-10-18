@@ -72,9 +72,15 @@ He actualizado los dashboards de métricas para mejorar la experiencia y funcion
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jmquintana&layout=compact&theme=transparent" alt="Lenguajes usados" />
+  <img 
+    src="https://github-readme-stats.vercel.app/api/top-langs?username=jmquintana&layout=compact&theme=transparent&hide_border=true" 
+    alt="Lenguajes más usados" 
+  />
   <br/>
   <a href="https://github.com/jmquintana">
-    <img src="https://github-readme-stats.vercel.app/api?username=jmquintana&theme=transparent" alt="Estadísticas de GitHub" />
+    <img 
+      src="https://github-readme-stats.vercel.app/api?username=jmquintana&show_icons=true&theme=transparent&hide_border=true" 
+      alt="Estadísticas de GitHub" 
+    />
   </a>
 </p>
