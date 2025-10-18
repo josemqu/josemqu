@@ -84,3 +84,42 @@ He actualizado los dashboards de métricas para mejorar la experiencia y funcion
     />
   </a>
 </p>
+
+<p align="center">
+  <!-- Lenguajes más usados -->
+  <img 
+    src="https://github-readme-stats.vercel.app/api/top-langs?username=josemqu&layout=compact&theme=transparent&hide_border=true" 
+    alt="Lenguajes más usados" 
+  />
+  <br/>
+
+  <!-- Estadísticas generales -->
+  <a href="https://github.com/josemqu">
+    <img 
+      src="https://github-readme-stats.vercel.app/api?username=josemqu&show_icons=true&theme=transparent&hide_border=true" 
+      alt="Estadísticas de GitHub" 
+    />
+  </a>
+  <br/>
+
+  <!-- Racha de commits (Streak) -->
+  <img 
+    src="https://streak-stats.demolab.com?user=josemqu&theme=transparent&hide_border=true" 
+    alt="Racha de commits" 
+  />
+  <br/>
+
+  <!-- Trophy (logros) -->
+  <img 
+    src="https://github-profile-trophy.vercel.app/?username=josemqu&theme=onestar&no-frame=true&column=4" 
+    alt="Trofeos de GitHub" 
+  />
+  <br/>
+
+  <!-- Contador de visitas -->
+  <img 
+    src="https://komarev.com/ghpvc/?username=josemqu&label=Visitas&color=blue&style=flat-square" 
+    alt="Contador de visitas" 
+  />
+</p>
+
