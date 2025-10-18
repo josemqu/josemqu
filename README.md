@@ -67,7 +67,7 @@ He actualizado los dashboards de métricas para mejorar la experiencia y funcion
 ## 📫 Contacto
 
 - ✉️ **mailjmq@gmail.com**  
-- 🔗 [Twitter](https://twitter.com/josemqu1) • [LinkedIn](https://linkedin.com/in/jos%C3%...) • [GitHub](https://github.com/jmquintana)
+- 🔗 [Twitter](https://twitter.com/josemqu1) • [LinkedIn](https://linkedin.com/in/josemqu) • [GitHub](https://github.com/josemqu)
 
 ---
 
