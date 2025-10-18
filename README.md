@@ -25,8 +25,6 @@
 - Comparativa de precios para facilitar la elección más conveniente.  
 - Interfaz moderna, ágil y optimizada para dispositivos móviles.  
 
-💡 Desde junio de 2025, el gobierno retiró la obligación de que las estaciones informen sus precios; sin embargo, la mayoría continúa haciéndolo, y el proyecto sigue creciendo para ofrecer información cada vez más actualizada.  
-
 ---
 
 
