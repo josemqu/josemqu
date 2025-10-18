@@ -9,17 +9,27 @@
 
 ---
 
-## ⚡ Proyecto destacado: **PrecioNafta**
+## ⚡ Proyecto destacado: **Precio Nafta**
 
-📱 **PrecioNafta** es una app y web app desarrollada para mostrar precios actualizados de combustibles (Nafta Super, Premium, Gas Oil °2/°3 y GNC) en estaciones de servicio de Argentina.
+📱 **Precio Nafta** es una aplicación móvil y web desarrollada para mostrar precios actualizados de combustibles en estaciones de servicio de toda **Argentina**: Nafta Súper, Premium, Gasoil Grado 2 / Grado 3 y GNC.
 
-- Disponible en **Android**: mantiene actualizaciones periódicas y destaca por su interfaz clara y eficiente :contentReference[oaicite:1]{index=1}.
-- Funcionalidades clave:
-  - Consulta en tiempo real de precios por combustible y empresa.
-  - Integración con Google Maps para encontrar estaciones cercanas.
-  - Comparativa de precios para ahorrar tiempo y dinero.
+🚀 **Plataformas disponibles:**
+- 🌐 [App Web](https://www.precionafta.com/)
+- 🖥️ [Landing / Web de presentación](https://precio-nafta-landing.vercel.app/)
+- 🤖 [Android – Google Play](https://play.google.com/store/apps/details?id=com.precionafta.www.twa&hl=es_AR&pli=1)
+- 🍎 [iOS – App Store](https://apps.apple.com/us/app/precio-nafta/id6749783431)
+
+🧭 **Principales funcionalidades:**
+- Consulta en tiempo real de precios por tipo de combustible y empresa.  
+- Integración con **Google Maps** para ubicar estaciones cercanas.  
+- Comparativa de precios para facilitar la elección más conveniente.  
+- Interfaz moderna, ágil y optimizada para dispositivos móviles.  
+
+💡 Desde junio de 2025, el gobierno retiró la obligación de que las estaciones informen sus precios; sin embargo, la mayoría continúa haciéndolo, y el proyecto sigue creciendo para ofrecer información cada vez más actualizada.  
 
 ---
+
+
 
 ## 📊 Dashboards e interactividad
 
