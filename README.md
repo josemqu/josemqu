@@ -1,100 +1,101 @@
-<h1 align="center">👋 ¡Hola! Soy José María Quintana</h1>
-<h3 align="center">Ingeniero Químico & Desarrollador Full-Stack</h3>
+# 🏛️ José María Quintana
+### Solutions Architecture | Full-Stack Development | Process Automation & AI
+
+Buenos Aires, Argentina | [LinkedIn](https://linkedin.com/in/josemqu) | [Portfolio](https://jmquintana.vercel.app/) | mailjmq@gmail.com
+
+---
+
+Me especializo en diseñar y construir arquitecturas de software orientadas a datos, automatización de procesos e integración de Inteligencia Artificial. 
+
+Mi enfoque profesional se centra en resolver problemas técnicos complejos y optimizar flujos de trabajo críticos a través de soluciones de software estructuradas, escalables y eficientes. Creo firmemente en el desarrollo basado en la toma de decisiones informada por datos y en la creación de herramientas que aporten valor inmediato y tangible.
+
+---
+
+## 🚀 Proyectos Destacados
+
+### 🏆 [FIFA World Cup 2026 Simulator & Prode](https://github.com/josemqu/fifa-world-cup-2026)
+*Motor de predicciones probabilísticas y plataforma interactiva para el torneo global.*
+- **Problema:** Simular dinámicas de torneos complejos y gestionar predicciones multiusuario en tiempo real.
+- **Arquitectura e Impacto:** Implementación de modelos de simulación estadística (Montecarlo) para estimar probabilidades pre-match y proyecciones del torneo. Desarrollo de un sistema reactivo y sincrónico para la gestión de ligas/grupos de usuarios sin degradación de rendimiento.
+- **Tech Stack:** `Next.js`, `React`, `TypeScript`, `Tailwind CSS`, `Firebase`, `MongoDB`.
+
+### ⛽ [Precio Nafta – Fuel Price Intelligence](https://github.com/josemqu/precio-nafta-landing)
+*Plataforma de mapeo, consulta y analítica de combustibles en tiempo real para Argentina.*
+- **Problema:** Garantizar el acceso a datos actualizados de combustibles en un entorno de mercado desregulado y sin obligaciones de reporte oficial directo.
+- **Arquitectura e Impacto:** Pipeline automatizado de extracción, limpieza y procesamiento de datos en segundo plano (Python/scraping). Visualizaciones interactivas de promedios regionales e integración de geolocalización con baja latencia.
+- **Tech Stack:** `React`, `TypeScript`, `Node.js`, `Express`, `Firebase Firestore`, `Python`, `Google Maps API`.
+
+### 🧠 [AI Nutrition & Diabetes Assistant](https://github.com/josemqu/ai-nutrition-agent)
+*Asistente experto contextual para soporte nutricional y monitoreo de diabetes.*
+- **Problema:** Proveer respuestas y sugerencias personalizadas de alta fidelidad médica procesando datos de usuario y pautas de nutrición de forma segura.
+- **Arquitectura e Impacto:** Orquestación de modelos de lenguaje natural adaptados (RAG/Prompt Engineering especializado) con un flujo conversacional reactivo optimizado para retención de contexto.
+- **Tech Stack:** `Next.js`, `React`, `TypeScript`, `Tailwind CSS`, `AI SDK / LLM Integration`.
+
+### 🗺️ [Logistics & Telemetry Systems](https://github.com/josemqu/directions-optimizer-app)
+*Suite de herramientas orientada al análisis de comportamiento de conducción y ruteo lógico.*
+- **Problema:** Optimización de itinerarios geográficos complejos y depuración de señales GPS ruidosas para análisis telemático.
+- **Arquitectura e Impacto:** Integración de filtros digitales de señales (procesamiento de datos GPS) y algoritmos de optimización de rutas (Traveling Salesperson Problem / VRP adaptados).
+- **Tech Stack:** `TypeScript`, `Node.js`, `Python` (Filtros de señales y procesamiento de datasets).
+
+---
+
+## 🧰 Ecosistema Tecnológico
+
+<table>
+  <tr>
+    <td valign="top" width="50%">
+      <strong>Languages & Core</strong><br/>
+      <img src="https://img.shields.io/badge/Python-24292e?style=flat-square&logo=python&logoColor=white" />
+      <img src="https://img.shields.io/badge/TypeScript-24292e?style=flat-square&logo=typescript&logoColor=white" />
+      <img src="https://img.shields.io/badge/JavaScript-24292e?style=flat-square&logo=javascript&logoColor=white" />
+      <img src="https://img.shields.io/badge/SQL-24292e?style=flat-square&logo=postgresql&logoColor=white" />
+      <img src="https://img.shields.io/badge/VBA-24292e?style=flat-square&logo=microsoftoffice&logoColor=white" /><br/>
+      <br/>
+      <strong>Frameworks & Tools</strong><br/>
+      <img src="https://img.shields.io/badge/Next.js-24292e?style=flat-square&logo=nextdotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/React-24292e?style=flat-square&logo=react&logoColor=white" />
+      <img src="https://img.shields.io/badge/Astro-24292e?style=flat-square&logo=astro&logoColor=white" />
+      <img src="https://img.shields.io/badge/Tailwind_CSS-24292e?style=flat-square&logo=tailwindcss&logoColor=white" />
+      <img src="https://img.shields.io/badge/Svelte-24292e?style=flat-square&logo=svelte&logoColor=white" />
+    </td>
+    <td valign="top" width="50%">
+      <strong>Databases, Cloud & Backend</strong><br/>
+      <img src="https://img.shields.io/badge/Node.js-24292e?style=flat-square&logo=nodedotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/Express-24292e?style=flat-square&logo=express&logoColor=white" />
+      <img src="https://img.shields.io/badge/PostgreSQL-24292e?style=flat-square&logo=postgresql&logoColor=white" />
+      <img src="https://img.shields.io/badge/MongoDB-24292e?style=flat-square&logo=mongodb&logoColor=white" />
+      <img src="https://img.shields.io/badge/Firebase-24292e?style=flat-square&logo=firebase&logoColor=white" /><br/>
+      <br/>
+      <strong>Automation, AI & Utilities</strong><br/>
+      <img src="https://img.shields.io/badge/n8n-24292e?style=flat-square&logo=n8n&logoColor=white" />
+      <img src="https://img.shields.io/badge/Git-24292e?style=flat-square&logo=git&logoColor=white" />
+      <img src="https://img.shields.io/badge/Obsidian-24292e?style=flat-square&logo=obsidian&logoColor=white" />
+      <img src="https://img.shields.io/badge/Postman-24292e?style=flat-square&logo=postman&logoColor=white" />
+    </td>
+  </tr>
+</table>
+
+---
+
+## ⚡ En qué estoy trabajando / Investigando ahora
+
+- **Simulaciones Estadísticas:** Refinando la precisión y rendimiento del motor Monte Carlo en [fifa-world-cup-2026](https://github.com/josemqu/fifa-world-cup-2026), recalculando proyecciones complejas directamente en el cliente minimizando el impacto de renderizado (flickering de estados).
+- **Integraciones de Agentes Autónomos:** Diseñando sistemas expertos conversacionales basados en flujos interactivos de toma de decisiones y consumo de APIs de salud/nutrición.
+- **Automatización de Procesos:** Construyendo pipelines ligeros de scraping y parsing de datos no estructurados y sincronización programada.
+
+---
+
+## 📊 Actividad en GitHub
 
 <p align="center">
-  <em>Apasionado por la tecnología, los datos y el desarrollo de soluciones eficientes que generen impacto real.</em>
+  <img src="https://github-readme-stats.vercel.app/api?username=josemqu&show_icons=true&theme=transparent&hide_border=true" width="48%" alt="Estadísticas de GitHub" />
+  <img src="https://streak-stats.demolab.com?user=josemqu&theme=transparent&hide_border=true" width="48%" alt="Racha de commits" />
 </p>
 
 <p align="center">
-  <a href="https://twitter.com/josemqu1"><img src="https://img.shields.io/twitter/follow/josemqu1?logo=twitter&style=for-the-badge" alt="@josemqu1" /></a>
-  <a href="https://linkedin.com/in/josemqu"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://github.com/josemqu"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://jmquintana.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-28A745?style=for-the-badge&logo=react&logoColor=white"/></a>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=josemqu&layout=compact&theme=transparent&hide_border=true" width="60%" alt="Lenguajes más usados" />
 </p>
 
----
-
-## ⚡ Proyecto destacado: **Precio Nafta**
-
-📱 **Precio Nafta** es una aplicación móvil y web desarrollada para mostrar precios actualizados de combustibles en estaciones de servicio de toda **Argentina**: Nafta Súper, Premium, Gasoil Grado 2 / 3 y GNC.
-
-🚀 **Plataformas:**
-- 🌐 [App Web](https://www.precionafta.com/)
-- 🖥️ [Landing](https://precio-nafta-landing.vercel.app/)
-- 🤖 [Android – Google Play](https://play.google.com/store/apps/details?id=com.precionafta.www.twa&hl=es_AR&pli=1)
-- 🍎 [iOS – App Store](https://apps.apple.com/us/app/precio-nafta/id6749783431)
-
-🧭 **Principales funcionalidades:**
-- Consulta en tiempo real de precios por tipo de combustible y empresa.  
-- Integración con **Google Maps** para ubicar estaciones cercanas.  
-- Comparativa de precios por zona o localidad.  
-- Interfaz moderna, ágil y optimizada para dispositivos móviles.  
-
-💡 Desde junio de 2025, la **Resolución 314/2016** dejó de tener vigencia, por lo que las estaciones ya no están obligadas a informar precios. Sin embargo, **Precio Nafta** sigue actualizando datos en tiempo real a partir de estaciones y fuentes colaborativas.
-
----
-
-## 📊 Dashboards e interactividad
-
-- 🔗 **Filtros dinámicos y navegación fluida** entre regiones y tipos de combustible.  
-- 📈 Dashboards con **Chart.js** + React, que muestran promedios, mínimos y máximos por provincia.  
-- ⚙️ API REST con endpoints optimizados y actualizaciones automáticas.  
-
----
-
-## 🧠 Stack tecnológico
-
-| Capa | Tecnologías |
-|------|--------------|
-| **Frontend** | React + TypeScript + Chart.js |
-| **Backend** | Node.js + Express |
-| **Base de datos** | Firebase / Firestore |
-| **DevOps / Cloud** | Docker, GCP, AWS, CI/CD |
-
-✅ **Implementaciones recientes**
-- Graficación interactiva por región y marca.  
-- Scheduler para actualización de precios.  
-- Mejora de rendimiento y caching en API.  
-
----
-
-## 🚀 ¿Por qué destaca Precio Nafta?
-
-- 🔥 **Actualización continua** de precios informados por estaciones activas.  
-- 💡 **Valor real** para los usuarios (ahorro y decisión informada).  
-- 🌍 Arquitectura escalable hacia nuevos verticales (energía, movilidad, IoT).  
-- 🧩 Ejemplo de integración full-stack: frontend, backend y despliegue en nube.  
-
----
-
-## 🧰 Stack de tecnologías
-
 <p align="center">
-
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Next.js](https://img.shields.io/badge/next.js-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Node.js](https://img.shields.io/badge/node.js-%23339933.svg?style=for-the-badge&logo=node.js&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Firebase Realtime Database](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-
-</p>
-
----
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=josemqu&show_icons=true&theme=transparent&hide_border=true" alt="Estadísticas de GitHub"/><br/>
-  <img src="https://streak-stats.demolab.com?user=josemqu&theme=transparent&hide_border=true" alt="Racha de commits"/><br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=josemqu&layout=compact&theme=transparent&hide_border=true" alt="Lenguajes más usados"/><br/>
-  <img src="https://komarev.com/ghpvc/?username=josemqu&label=Visitas&color=blue&style=flat-square" alt="Contador de visitas"/>
+  <img src="https://komarev.com/ghpvc/?username=josemqu&label=Visitas&color=24292e&style=flat-square" alt="Contador de visitas" />
 </p>
