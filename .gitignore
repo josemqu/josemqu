@@ -1,0 +1,17 @@
+# Ignorar PNGs del workflow local (los regenera GitHub Actions)
+assets/*.png
+
+# Node (por si en el futuro agregamos algo)
+node_modules/
+npm-debug.log*
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Variables de entorno
+.env
+.env.local

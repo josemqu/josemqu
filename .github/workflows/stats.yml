@@ -1,0 +1,73 @@
+name: Update GitHub stats cards
+
+on:
+  # Corre cada 6 horas
+  schedule:
+    - cron: "0 */6 * * *"
+
+  # Permite disparar manualmente desde la pestaña Actions
+  workflow_dispatch:
+
+  # Re-corre cada vez que se modifica este archivo
+  # (útil para iterar rápido sin esperar 6h)
+  push:
+    paths:
+      - ".github/workflows/stats.yml"
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: write   # Necesario para hacer commit de las imágenes
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Download stats card (general)
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          mkdir -p assets
+          curl -sSL -H "Authorization: token $GH_TOKEN" \
+            "https://github-readme-stats.vercel.app/api?username=josemqu&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" \
+            -o assets/github-stats.png
+
+      - name: Download top languages card
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          curl -sSL -H "Authorization: token $GH_TOKEN" \
+            "https://github-readme-stats.vercel.app/api/top-langs/?username=josemqu&layout=compact&theme=transparent&hide_border=true&hide=html,css" \
+            -o assets/top-langs.png
+
+      - name: Verify images are valid PNGs
+        run: |
+          for f in assets/*.png; do
+            size=$(stat -c%s "$f")
+            echo "$f → ${size} bytes"
+            if [ "$size" -lt 2000 ]; then
+              echo "::error::$f parece estar vacía o corrupta (${size} bytes)"
+              exit 1
+            fi
+            file "$f"
+          done
+
+      - name: Commit updated images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/*.png
+          if git diff --cached --quiet; then
+            echo "Sin cambios, nada que commitear."
+          else
+            git commit -m "chore(assets): refresh GitHub stats cards"
+            git push
+          fi
