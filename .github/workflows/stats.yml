@@ -37,11 +37,11 @@ jobs:
             AUTH_HEADER="Authorization: token $GH_TOKEN"
           fi
 
-          # Stats compactas con theme tokyonight (texto legible, fondo oscuro)
+          # Stats: theme tokyonight + hide_logo (sin Octocat gigante)
           curl -sSL \
             -H "$AUTH_HEADER" \
             -H "User-Agent: github-actions-stats-bot" \
-            "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=josemqu&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" \
+            "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=josemqu&theme=tokyonight&hide_border=true&hide_logo=true" \
             -o assets/github-stats.svg
 
           size=$(stat -c%s assets/github-stats.svg)

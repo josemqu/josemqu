@@ -88,9 +88,9 @@ Mi enfoque profesional se centra en resolver problemas técnicos complejos y opt
 ## 📊 Actividad en GitHub
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/josemqu/josemqu/main/assets/github-stats.svg" width="32%" alt="Estadísticas de GitHub" />
+  <img src="https://raw.githubusercontent.com/josemqu/josemqu/main/assets/github-stats.svg" width="30%" alt="Estadísticas de GitHub" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=josemqu&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" width="32%" alt="Racha de commits" />
-  <img src="https://raw.githubusercontent.com/josemqu/josemqu/main/assets/top-langs.svg" width="32%" alt="Lenguajes más usados" />
+  <img src="https://raw.githubusercontent.com/josemqu/josemqu/main/assets/top-langs.svg" width="34%" alt="Lenguajes más usados" />
 </p>
 
 <p align="center">
