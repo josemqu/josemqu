@@ -88,18 +88,17 @@ Mi enfoque profesional se centra en resolver problemas técnicos complejos y opt
 ## 📊 Actividad en GitHub
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/josemqu/josemqu/main/assets/github-stats.svg" width="48%" alt="Estadísticas de GitHub" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=josemqu&theme=transparent&hide_border=true" width="48%" alt="Racha de commits" />
+  <img src="https://raw.githubusercontent.com/josemqu/josemqu/main/assets/github-stats.svg" width="32%" alt="Estadísticas de GitHub" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=josemqu&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" width="32%" alt="Racha de commits" />
+  <img src="https://raw.githubusercontent.com/josemqu/josemqu/main/assets/top-langs.svg" width="32%" alt="Lenguajes más usados" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/josemqu/josemqu/main/assets/top-langs.svg" width="60%" alt="Lenguajes más usados" />
+  <img src="https://komarev.com/ghpvc/?username=josemqu&label=Visitas&color=24292e&style=flat-square" alt="Visitas al perfil" />
+  <a href="https://github.com/josemqu?tab=followers"><img src="https://img.shields.io/github/followers/josemqu?style=flat-square&color=24292e&label=Seguidores" alt="Seguidores" /></a>
+  <a href="https://github.com/josemqu?tab=repositories"><img src="https://img.shields.io/github/stars/josemqu?style=flat-square&color=24292e&label=Stars%20recibidas&affiliate=disabled" alt="Stars recibidas" /></a>
 </p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=josemqu&label=Visitas&color=24292e&style=flat-square" alt="Contador de visitas" />
-</p>
-
-<!-- Las tarjetas "Estadísticas de GitHub" y "Lenguajes más usados" se regeneran
-     automáticamente cada 6h vía .github/workflows/stats.yml usando
-     github-profile-summary-cards.vercel.app. -->
+<!-- Las tarjetas se regeneran automáticamente cada 6h vía .github/workflows/stats.yml.
+     github-stats.svg y top-langs.svg vienen de github-profile-summary-cards.vercel.app
+     (theme: tokyonight). El streak viene del mirror estable en Heroku. -->

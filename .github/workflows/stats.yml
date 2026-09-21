@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Download stats card (general) via profile-summary-cards
+      - name: Download stats card
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
@@ -37,22 +37,22 @@ jobs:
             AUTH_HEADER="Authorization: token $GH_TOKEN"
           fi
 
+          # Stats compactas con theme tokyonight (texto legible, fondo oscuro)
           curl -sSL \
             -H "$AUTH_HEADER" \
             -H "User-Agent: github-actions-stats-bot" \
-            "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=josemqu&theme=transparent&hide_border=true&include_all_commits=true&count_private=true" \
+            "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=josemqu&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" \
             -o assets/github-stats.svg
 
           size=$(stat -c%s assets/github-stats.svg)
           echo "github-stats.svg -> ${size} bytes"
-
           if [ "$size" -lt 200 ]; then
-            echo "::error::Respuesta demasiado pequena (${size} bytes), probable error:"
+            echo "::error::Respuesta demasiado pequena:"
             head -c 500 assets/github-stats.svg
             exit 1
           fi
 
-      - name: Download top languages card via profile-summary-cards
+      - name: Download top languages card (most-commit-language: barras horizontales)
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
@@ -62,17 +62,17 @@ jobs:
             AUTH_HEADER="Authorization: token $GH_TOKEN"
           fi
 
+          # Barras horizontales (no donut) -> mejor proporcion y lectura
           curl -sSL \
             -H "$AUTH_HEADER" \
             -H "User-Agent: github-actions-stats-bot" \
-            "https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=josemqu&theme=transparent&hide_border=true&exclude=CSS,HTML" \
+            "https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=josemqu&theme=tokyonight&hide_border=true&exclude=CSS,HTML&langsCount=5" \
             -o assets/top-langs.svg
 
           size=$(stat -c%s assets/top-langs.svg)
           echo "top-langs.svg -> ${size} bytes"
-
           if [ "$size" -lt 200 ]; then
-            echo "::error::Respuesta demasiado pequena (${size} bytes), probable error:"
+            echo "::error::Respuesta demasiado pequena:"
             head -c 500 assets/top-langs.svg
             exit 1
           fi
@@ -110,12 +110,5 @@ jobs:
           else
             echo "::error::git push fallo. Log completo:"
             cat /tmp/push.log
-            echo ""
-            echo "::error::Diagnostico:"
-            echo " - Si ves 'Permission denied': el GITHUB_TOKEN no tiene permisos."
-            echo "   Solucion: verificar 'Settings -> Actions -> General -> Workflow permissions'"
-            echo "   y seleccionar 'Read and write permissions'."
-            echo " - Si ves 'refusing to allow OAuth App': branch protection bloquea Actions."
-            echo "   Solucion: 'Settings -> Branches -> main -> Allow GitHub Actions to create and approve pull requests'."
             exit 1
           fi
