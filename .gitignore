@@ -1,7 +1,3 @@
-# Ignorar assets generados por GitHub Actions (los regenera el workflow)
-assets/*.svg
-assets/*.png
-
 # Node (por si en el futuro agregamos algo)
 node_modules/
 npm-debug.log*
