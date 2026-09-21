@@ -9,7 +9,6 @@ on:
   workflow_dispatch:
 
   # Re-corre cada vez que se modifica este archivo
-  # (útil para iterar rápido sin esperar 6h)
   push:
     paths:
       - ".github/workflows/stats.yml"
@@ -29,34 +28,99 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24"
+
+      - name: Verify GH_TOKEN secret exists
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::El secret GH_TOKEN no está configurado."
+            echo "Ir a Settings → Secrets and variables → Actions → New repository secret"
+            echo "Name: GH_TOKEN"
+            echo "Value: PAT clásico (scope: repo + read:user) o fine-grained (read:user)"
+            exit 1
+          fi
+          echo "GH_TOKEN presente (longitud: ${#GH_TOKEN} caracteres)"
 
       - name: Download stats card (general)
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           mkdir -p assets
-          curl -sSL -H "Authorization: token $GH_TOKEN" \
+
+          # Detectar tipo de token: clásico empieza con 'ghp_', fine-grained con 'github_pat_'
+          if [[ "$GH_TOKEN" == github_pat_* ]]; then
+            AUTH_HEADER="Authorization: Bearer $GH_TOKEN"
+            echo "Token fine-grained detectado, usando Bearer."
+          else
+            AUTH_HEADER="Authorization: token $GH_TOKEN"
+            echo "Token clásico detectado, usando 'token'."
+          fi
+
+          curl -sSL \
+            -H "$AUTH_HEADER" \
+            -H "User-Agent: github-actions-stats-bot" \
+            -H "Accept: image/png" \
             "https://github-readme-stats.vercel.app/api?username=josemqu&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" \
             -o assets/github-stats.png
+
+          size=$(stat -c%s assets/github-stats.png)
+          echo "github-stats.png → ${size} bytes"
+
+          # Si la respuesta es < 2KB, probablemente es un error XML/HTML
+          if [ "$size" -lt 2000 ]; then
+            echo "::error::La respuesta es demasiado pequeña (${size} bytes), probable error:"
+            head -c 500 assets/github-stats.png
+            echo ""
+            exit 1
+          fi
+
+          # Verificar que sea un PNG válido (magic bytes: 89 50 4E 47)
+          if ! head -c 4 assets/github-stats.png | xxd -p | grep -q "89504e47"; then
+            echo "::error::El archivo no es un PNG válido. Contenido:"
+            head -c 500 assets/github-stats.png
+            exit 1
+          fi
 
       - name: Download top languages card
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          curl -sSL -H "Authorization: token $GH_TOKEN" \
+          if [[ "$GH_TOKEN" == github_pat_* ]]; then
+            AUTH_HEADER="Authorization: Bearer $GH_TOKEN"
+          else
+            AUTH_HEADER="Authorization: token $GH_TOKEN"
+          fi
+
+          curl -sSL \
+            -H "$AUTH_HEADER" \
+            -H "User-Agent: github-actions-stats-bot" \
+            -H "Accept: image/png" \
             "https://github-readme-stats.vercel.app/api/top-langs/?username=josemqu&layout=compact&theme=transparent&hide_border=true&hide=html,css" \
             -o assets/top-langs.png
 
-      - name: Verify images are valid PNGs
+          size=$(stat -c%s assets/top-langs.png)
+          echo "top-langs.png → ${size} bytes"
+
+          if [ "$size" -lt 2000 ]; then
+            echo "::error::La respuesta es demasiado pequeña (${size} bytes), probable error:"
+            head -c 500 assets/top-langs.png
+            echo ""
+            exit 1
+          fi
+
+          if ! head -c 4 assets/top-langs.png | xxd -p | grep -q "89504e47"; then
+            echo "::error::El archivo no es un PNG válido. Contenido:"
+            head -c 500 assets/top-langs.png
+            exit 1
+          fi
+
+      - name: Show final summary
         run: |
+          echo "=== Imágenes generadas ==="
+          ls -la assets/
           for f in assets/*.png; do
-            size=$(stat -c%s "$f")
-            echo "$f → ${size} bytes"
-            if [ "$size" -lt 2000 ]; then
-              echo "::error::$f parece estar vacía o corrupta (${size} bytes)"
-              exit 1
-            fi
             file "$f"
           done
 
