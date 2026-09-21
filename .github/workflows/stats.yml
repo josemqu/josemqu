@@ -30,60 +30,35 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Verify GH_TOKEN secret exists
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          if [ -z "$GH_TOKEN" ]; then
-            echo "::error::El secret GH_TOKEN no está configurado."
-            echo "Ir a Settings → Secrets and variables → Actions → New repository secret"
-            echo "Name: GH_TOKEN"
-            echo "Value: PAT clásico (scope: repo + read:user) o fine-grained (read:user)"
-            exit 1
-          fi
-          echo "GH_TOKEN presente (longitud: ${#GH_TOKEN} caracteres)"
-
-      - name: Download stats card (general)
+      - name: Download stats card (general) via profile-summary-cards
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           mkdir -p assets
 
-          # Detectar tipo de token: clásico empieza con 'ghp_', fine-grained con 'github_pat_'
+          # Auto-detectar tipo de token (clásico vs fine-grained)
           if [[ "$GH_TOKEN" == github_pat_* ]]; then
             AUTH_HEADER="Authorization: Bearer $GH_TOKEN"
-            echo "Token fine-grained detectado, usando Bearer."
           else
             AUTH_HEADER="Authorization: token $GH_TOKEN"
-            echo "Token clásico detectado, usando 'token'."
           fi
 
           curl -sSL \
             -H "$AUTH_HEADER" \
             -H "User-Agent: github-actions-stats-bot" \
-            -H "Accept: image/png" \
-            "https://github-readme-stats.vercel.app/api?username=josemqu&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" \
-            -o assets/github-stats.png
+            "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=josemqu&theme=transparent&hide_border=true&include_all_commits=true&count_private=true" \
+            -o assets/github-stats.svg
 
-          size=$(stat -c%s assets/github-stats.png)
-          echo "github-stats.png → ${size} bytes"
+          size=$(stat -c%s assets/github-stats.svg)
+          echo "github-stats.svg → ${size} bytes"
 
-          # Si la respuesta es < 2KB, probablemente es un error XML/HTML
-          if [ "$size" -lt 2000 ]; then
+          if [ "$size" -lt 200 ]; then
             echo "::error::La respuesta es demasiado pequeña (${size} bytes), probable error:"
-            head -c 500 assets/github-stats.png
-            echo ""
+            head -c 500 assets/github-stats.svg
             exit 1
           fi
 
-          # Verificar que sea un PNG válido (magic bytes: 89 50 4E 47)
-          if ! head -c 4 assets/github-stats.png | xxd -p | grep -q "89504e47"; then
-            echo "::error::El archivo no es un PNG válido. Contenido:"
-            head -c 500 assets/github-stats.png
-            exit 1
-          fi
-
-      - name: Download top languages card
+      - name: Download top languages card via profile-summary-cards
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
@@ -96,39 +71,31 @@ jobs:
           curl -sSL \
             -H "$AUTH_HEADER" \
             -H "User-Agent: github-actions-stats-bot" \
-            -H "Accept: image/png" \
-            "https://github-readme-stats.vercel.app/api/top-langs/?username=josemqu&layout=compact&theme=transparent&hide_border=true&hide=html,css" \
-            -o assets/top-langs.png
+            "https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=josemqu&theme=transparent&hide_border=true&exclude=CSS,HTML" \
+            -o assets/top-langs.svg
 
-          size=$(stat -c%s assets/top-langs.png)
-          echo "top-langs.png → ${size} bytes"
+          size=$(stat -c%s assets/top-langs.svg)
+          echo "top-langs.svg → ${size} bytes"
 
-          if [ "$size" -lt 2000 ]; then
+          if [ "$size" -lt 200 ]; then
             echo "::error::La respuesta es demasiado pequeña (${size} bytes), probable error:"
-            head -c 500 assets/top-langs.png
-            echo ""
-            exit 1
-          fi
-
-          if ! head -c 4 assets/top-langs.png | xxd -p | grep -q "89504e47"; then
-            echo "::error::El archivo no es un PNG válido. Contenido:"
-            head -c 500 assets/top-langs.png
+            head -c 500 assets/top-langs.svg
             exit 1
           fi
 
       - name: Show final summary
         run: |
-          echo "=== Imágenes generadas ==="
+          echo "=== Archivos generados ==="
           ls -la assets/
-          for f in assets/*.png; do
+          for f in assets/*.svg; do
             file "$f"
           done
 
-      - name: Commit updated images
+      - name: Commit updated assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/*.png
+          git add assets/*.svg
           if git diff --cached --quiet; then
             echo "Sin cambios, nada que commitear."
           else

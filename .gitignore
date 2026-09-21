@@ -1,4 +1,5 @@
-# Ignorar PNGs del workflow local (los regenera GitHub Actions)
+# Ignorar assets generados por GitHub Actions (los regenera el workflow)
+assets/*.svg
 assets/*.png
 
 # Node (por si en el futuro agregamos algo)
