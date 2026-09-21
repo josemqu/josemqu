@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Download stats card
+      - name: "Download stats card (compact, theme tokyonight)"
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
@@ -52,7 +52,7 @@ jobs:
             exit 1
           fi
 
-      - name: Download top languages card (most-commit-language: barras horizontales)
+      - name: "Download top languages card (most-commit-language: barras horizontales)"
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
